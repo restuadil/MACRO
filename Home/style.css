@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,500&family=Rye&display=swap');
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* navigation */
+nav {
+    background-color: #55D0FF;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.nav-brand {
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rye', cursive;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu li a {
+    margin: 0 20px;
+    font-size: 15px;
+    color: black;
+}
+
+.nav-login {
+    background-color: #fff;
+    color: #55D0FF;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* end snavigation */
+
+/* hero */
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 100px;
+}
+
+.left-hero {
+    width: 450px;
+}
+
+.right-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 400px;
+}
+
+.hero-text h2 {
+    margin-bottom: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rye', cursive;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.hero-text button {
+    background-color: #55D0FF;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* end hero */
+
+/* doctor section */
+.doctor {
+    background-color: #CCF9FF;
+    padding: 20px 0;
+}
+
+.doctor-title {
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rye', cursive;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.card-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-text {
+    margin: 10px;
+}
+
+.card-text h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rye', cursive;
+    margin-bottom: 10px;
+}
+
+.card-text p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.card-btn {
+    display: block;
+    background-color: #55D0FF;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.doctor-btn {
+    display: block;
+    background-color: #fff;
+    color: #55D0FF;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+/* end doctor section */
+
+/* productt section */
+
+.product {
+    margin-bottom: 50px;
+}
+
+.product-title {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rye', cursive;
+    margin: 30px;
+}
+
+.banner {
+    margin: 50px auto;
+    background-image: url('../img/bed1.avif');
+    background-size: cover;
+    background-position: center;
+    width: 900px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+.banner-title {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rye', cursive;
+}
+
+.banner-tagline {
+    font-size: 20px;
+}
+
+.discount {
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.banner-left,
+.banner-right {
+    background-color: #55D0FF;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.bi-arrow-left-short {
+    left: -50px;
+}
+
+.bi-arrow-right-short {
+    right: -50px;
+}
+
+.cardProduct-container {
+    margin: 10px 100px;
+}
+
+.cardProduct-container h3 {
+    margin: 20px 0;
+}
+
+.recomended {
+    color: #55D0FF;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.container-product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.card-product {
+    color: black;
+    border-radius: 10px;
+    background-color: #ffff;
+    box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-product h4 {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.card-product span {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.card-product button {
+    margin: 10px auto;
+    display: block;
+    background-color: #55D0FF;
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.card-right, .card-left {
+    background-color: #55D0FF;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* end product section */
+
+/* artciel section */
+.article {
+    background-color: #CCF9FF;
+    padding-bottom: 30px;
+}
+
+
+
+.article-title {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rye', cursive;
+    padding: 30px;
+}
+
+.container-article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+}
+
+.article-img {
+    width: 320px;
+    height: 270px;
+}
+
+.article-type {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.article-btn {
+    background-color: #55D0FF;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.article-tagline {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px auto;
+    max-width: 250px;
+}
+
+.article-author {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+
+
+/* end article section */
+footer {
+    background-color: #55D0FF;
+}
+
+.footer {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 50px;
+}
+
+.footer-brand {
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rye', cursive;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.footer-phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.bi-telephone-fill {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    color: #55D0FF;
+}
+
+.footer-contact {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.two {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.three {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.four span {
+    text-align: right;
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.four div i {
+    color: #55D0FF;
+    background-color: #ffff;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.copyright {
+    display: block;
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
