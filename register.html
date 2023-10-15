@@ -13,30 +13,40 @@
 
 <body>
     <div class="container">
-        <div class="login">
-            <div class="login-form">
-                <input type="text" name="" id="" placeholder="NAMA LENGKAP">
-            </div>
-            <div class="login-form">
-                <input type="text" name="" id="" placeholder="MASUKAN EMAIL">
-            </div>
-            <div class="login-form">
-                <i class="bi bi-lock"></i>
-                <input type="password" name="" id="" placeholder="MASUKAN PASSWORD">
-            </div>
-            <div class="login-form">
-                <i class="bi bi-lock"></i>
-                <input type="password" name="" id="" placeholder="ULANGI PASSWORD">
-            </div>
-            <button class="login-btn">Daftar</button>
-            <span style="text-align: center;">Sudah Punya Akun ? <a href="index.html">Masuk Sekarang</a></span>
-            <div class="btn">
-                <button><a href="index.html">Masuk</a></button>
-                <button id="login"><a href="register.html">Daftar</a></button>
-            </div>
+        <form action="">
+            <div class="login">
+                <div class="login-form">
+                    <input type="text" name="fullname" id="fullname" placeholder="NAMA LENGKAP">
+                </div>
+                <div class="login-form">
+                    <input type="email" name="registerEmail" id="registerEmail" placeholder="MASUKAN EMAIL">
+                </div>
+                <div class="login-form">
+                    <i class="bi bi-lock"></i>
+                    <input type="password" name="registerPassword" id="registerPassword" placeholder="MASUKAN PASSWORD">
+                </div>
+                <div class="login-form">
+                    <i class="bi bi-lock"></i>
+                    <input type="password" name="reRegisterPassword" id="reRegisterPassword"
+                        placeholder="ULANGI PASSWORD">
+                </div>
+                <button class="login-btn" id="register" type="submit">Daftar</button>
+                <span style="text-align: center;">Sudah Punya Akun ? <a href="login.html">Masuk Sekarang</a></span>
+        </form>
+        <div class="btn">
+            <button><a href="login.html">Masuk</a></button>
+            <button id="masuk"><a href="register.html">Daftar</a></button>
         </div>
     </div>
-    <script src="index.js"></script>
+    </div>
+    <div id="success-popup">
+        <!-- <div class="popup">
+            <div class="popup-content">
+                <h2>Login Berhasil!</h2>
+                <p>Selamat datang di situs kami.</p>
+            </div>
+        </div> -->
+    </div>
+    <script src="register.js"></script>
 </body>
-
 </html>
