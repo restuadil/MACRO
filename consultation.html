@@ -1,433 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../img/hero.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
 
-    <title>Consultation</title>
-    <style>
-      *,
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-decoration: none;
-        box-sizing: border-box;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../img/hero.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
-      /* navigation */
-      nav {
-        background-color: #55d0ff;
-        padding: 15px 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999;
-      }
+  <title>Consultation</title>
+  <style>
+    *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
 
-      .nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 30px;
-      }
+    /* navigation */
+    nav {
+      background-color: #55d0ff;
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
 
-      .nav-brand {
-        font-size: 25px;
-        font-family: "Fira Sans", sans-serif;
-        font-family: "Playfair Display", serif;
-        font-family: "Rye", cursive;
-        color: #fff;
-        letter-spacing: 5px;
-      }
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 30px;
+    }
 
-      .nav-menu {
-        display: flex;
-        flex-direction: row;
-      }
+    .nav-brand {
+      font-size: 25px;
+      font-family: "Fira Sans", sans-serif;
+      font-family: "Playfair Display", serif;
+      font-family: "Rye", cursive;
+      color: #fff;
+      letter-spacing: 5px;
+    }
 
-      .nav-menu li a {
-        margin: 0 20px;
-        font-size: 15px;
-        color: black;
-      }
+    .nav-menu {
+      display: flex;
+      flex-direction: row;
+    }
 
-      .nav-login {
-        background-color: #fff;
-        color: #55d0ff;
-        border: none;
-        padding: 10px 30px;
-        border-radius: 10px;
-        cursor: pointer;
-      }
+    .nav-menu li a {
+      margin: 0 20px;
+      font-size: 15px;
+      color: black;
+    }
 
-      .container-consultation {
-        margin: 100px 100px;
-      }
-      .consultation {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .consultation h3 {
-        font-size: 15px;
-        font-family: "Fira Sans", sans-serif;
-        font-family: "Playfair Display", serif;
-        font-family: "Rye", cursive;
-        letter-spacing: 5px;
-      }
+    .nav-login {
+      background-color: #fff;
+      color: #55d0ff;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-      /* end snavigation */
+    .container-consultation {
+      margin: 100px 100px;
+    }
 
-      /* search container */
-      .search-container {
-        display: flex;
-        align-items: center;
-        background-color: #fff;
-        padding: 5px 30px;
-        border: #55d0ff 1px solid;
-        border-radius: 30px;
-      }
+    .consultation {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-      input[type="text"] {
-        border: none;
-        padding: 5px;
-        outline: none;
-      }
+    .consultation h3 {
+      font-size: 15px;
+      font-family: "Fira Sans", sans-serif;
+      font-family: "Playfair Display", serif;
+      font-family: "Rye", cursive;
+      letter-spacing: 5px;
+    }
 
-      i.fa-search {
-        margin-left: 10px;
-        font-size: 18px;
-        color: #55d0ff;
-      }
-      .container-card {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 15px;
-      }
-      .card {
-        border: 2px solid #55d0ff;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 10px;
-        border-radius: 20px;
-      }
+    /* end snavigation */
 
-      .card-img {
-        width: 300px;
-        height: 200px;
-        border-radius: 10px;
-      }
+    /* search container */
+    .search-container {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      padding: 5px 30px;
+      border: #55d0ff 1px solid;
+      border-radius: 30px;
+    }
 
-      .card-text {
-        margin: 10px;
-      }
+    input[type="text"] {
+      border: none;
+      padding: 5px;
+      outline: none;
+    }
 
-      .card-text h3 {
-        font-family: "Fira Sans", sans-serif;
-        font-family: "Playfair Display", serif;
-        font-family: "Rye", cursive;
-        margin-bottom: 10px;
-      }
+    i.fa-search {
+      margin-left: 10px;
+      font-size: 18px;
+      color: #55d0ff;
+    }
 
-      .card-text p {
-        font-size: 15px;
-        margin-bottom: 10px;
-      }
+    .container-card {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
 
-      .card-icon {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        margin: 10px 0;
-      }
+    .card {
+      border: 2px solid #55d0ff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 10px;
+      border-radius: 20px;
+    }
 
-      .card-btn {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        font-size: 15px;
-        background-color: #55d0ff;
-        color: #fff;
-        border: none;
-        padding: 10px 30px;
-        border-radius: 10px;
-        margin: 10px 0;
-        cursor: pointer;
-      }
-      i.bi-star-fill {
-        color: gold;
-      }
+    .card-img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+    }
 
-      .doctor-btn {
-        display: block;
-        background-color: #fff;
-        color: #55d0ff;
-        border: none;
-        padding: 10px 60px;
-        border-radius: 20px;
-        font-size: 20px;
-        margin: 20px auto;
-        cursor: pointer;
-      }
-      .card-price {
-        font-weight: bold;
-        font-family: "Fira Sans", sans-serif;
-        font-family: "Playfair Display", serif;
-        font-family: "Rye", cursive;
-        text-align: center;
-        letter-spacing: 2px;
-      }
+    .card-text {
+      margin: 10px;
+    }
 
-      footer {
-        background-color: #55d0ff;
-      }
+    .card-text h3 {
+      font-family: "Fira Sans", sans-serif;
+      font-family: "Playfair Display", serif;
+      font-family: "Rye", cursive;
+      margin-bottom: 10px;
+    }
 
-      .footer {
-        padding: 50px 0;
-        display: flex;
-        flex-direction: row;
-        gap: 100px;
-        justify-content: center;
-      }
+    .card-text p {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
 
-      .one {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: 0 50px;
-      }
+    .card-icon {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin: 10px 0;
+    }
 
-      .footer-brand {
-        font-size: 25px;
-        font-family: "Fira Sans", sans-serif;
-        font-family: "Playfair Display", serif;
-        font-family: "Rye", cursive;
-        color: #fff;
-        letter-spacing: 5px;
-      }
+    .card-btn {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      font-size: 15px;
+      background-color: #55d0ff;
+      color: #fff;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 10px;
+      margin: 10px 0;
+      cursor: pointer;
+    }
 
-      .footer-phone {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-      }
+    i.bi-star-fill {
+      color: gold;
+    }
 
-      .bi-telephone-fill {
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 50%;
-        color: #55d0ff;
-      }
+    .doctor-btn {
+      display: block;
+      background-color: #fff;
+      color: #55d0ff;
+      border: none;
+      padding: 10px 60px;
+      border-radius: 20px;
+      font-size: 20px;
+      margin: 20px auto;
+      cursor: pointer;
+    }
 
-      .footer-contact {
-        color: #ffff;
-        display: flex;
-        flex-direction: column;
-      }
+    .card-price {
+      font-weight: bold;
+      font-family: "Fira Sans", sans-serif;
+      font-family: "Playfair Display", serif;
+      font-family: "Rye", cursive;
+      text-align: center;
+      letter-spacing: 2px;
+    }
 
-      .two {
-        font-family: "Times New Roman", Times, serif;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 15px;
-      }
+    footer {
+      background-color: #55d0ff;
+    }
 
-      .three {
-        font-family: "Times New Roman", Times, serif;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 15px;
-      }
+    .footer {
+      padding: 50px 0;
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+      justify-content: center;
+    }
 
-      .four {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-      }
+    .one {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 0 50px;
+    }
 
-      .four span {
-        text-align: right;
-        color: #ffff;
-        font-size: 25px;
-        font-weight: 600;
-      }
+    .footer-brand {
+      font-size: 25px;
+      font-family: "Fira Sans", sans-serif;
+      font-family: "Playfair Display", serif;
+      font-family: "Rye", cursive;
+      color: #fff;
+      letter-spacing: 5px;
+    }
 
-      .four div i {
-        color: #55d0ff;
-        background-color: #ffff;
-        font-size: 25px;
-        padding: 15px;
-        border-radius: 50%;
-      }
+    .footer-phone {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
 
-      .copyright {
-        display: block;
-        padding: 15px 0;
-        font-size: 20px;
-        text-align: center;
-        color: white;
-      }
+    .bi-telephone-fill {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      color: #55d0ff;
+    }
 
-      /* end */
-    </style>
-  </head>
-  <body>
-    <nav>
-      <div class="nav">
-        <h2 class="nav-brand">LOGO BRAND</h2>
+    .footer-contact {
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .two {
+      font-family: "Times New Roman", Times, serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 15px;
+    }
+
+    .three {
+      font-family: "Times New Roman", Times, serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+
+    .four {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .four span {
+      text-align: right;
+      color: #ffff;
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    .four div i {
+      color: #55d0ff;
+      background-color: #ffff;
+      font-size: 25px;
+      padding: 15px;
+      border-radius: 50%;
+    }
+
+    .copyright {
+      display: block;
+      padding: 15px 0;
+      font-size: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    /* end */
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav">
+      <h2 class="nav-brand">LOGO BRAND</h2>
+      <div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="consultation.html">Konsultasi</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="article.html">Artikel</a></li>
+        </ul>
+      </div>
+      <button class="nav-login">Login</button>
+    </div>
+  </nav>
+  <!-- main -->
+  <main class="container-consultation">
+    <div class="consultation">
+      <h3>Konsultasi dengan Dokter Berpengalaman</h3>
+      <div class="search-container">
+        <input type="text" placeholder="Cari Dokter" />
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+    <div class="container-card">
+      <div class="card">
+        <img src="../img/doctor1.png" class="card-img" alt="" />
+        <div class="card-text">
+          <h3>Dr. Jasmine Burrows</h3>
+          <p>Dokter Spesialis Masalah Tidur</p>
+          <div class="card-icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <button class="card-btn">Chat</button>
+          <button class="card-btn">Book a Consultation</button>
+          <p class="card-price">Rp.300.000</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../img/doctor1.png" class="card-img" alt="" />
+        <div class="card-text">
+          <h3>Dr. Jasmine Burrows</h3>
+          <p>Dokter Spesialis Masalah Tidur</p>
+          <div class="card-icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <button class="card-btn">Chat</button>
+          <button class="card-btn">Book a Consultation</button>
+          <p class="card-price">Rp.300.000</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../img/doctor1.png" class="card-img" alt="" />
+        <div class="card-text">
+          <h3>Dr. Jasmine Burrows</h3>
+          <p>Dokter Spesialis Masalah Tidur</p>
+          <div class="card-icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <button class="card-btn">Chat</button>
+          <button class="card-btn">Book a Consultation</button>
+          <p class="card-price">Rp.300.000</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../img/doctor1.png" class="card-img" alt="" />
+        <div class="card-text">
+          <h3>Dr. Jasmine Burrows</h3>
+          <p>Dokter Spesialis Masalah Tidur</p>
+          <div class="card-icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <button class="card-btn">Chat</button>
+          <button class="card-btn">Book a Consultation</button>
+          <p class="card-price">Rp.300.000</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="one">
+        <h2 class="footer-brand">LOGO BRAND</h2>
         <div>
-          <ul class="nav-menu">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="consultation.html">Konsultasi</a></li>
-            <li><a href="produk.html">Produk</a></li>
-            <li><a href="article.html">Artikel</a></li>
-          </ul>
-        </div>
-        <button class="nav-login">Login</button>
-      </div>
-    </nav>
-    <!-- main -->
-    <main class="container-consultation">
-      <div class="consultation">
-        <h3>Konsultasi dengan Dokter Berpengalaman</h3>
-        <div class="search-container">
-          <input type="text" placeholder="Cari Dokter" />
-          <i class="fas fa-search"></i>
-        </div>
-      </div>
-      <div class="container-card">
-        <div class="card">
-          <img src="../img/doctor1.png" class="card-img" alt="" />
-          <div class="card-text">
-            <h3>Dr. Jasmine Burrows</h3>
-            <p>Dokter Spesialis Masalah Tidur</p>
-            <div class="card-icon">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
+          <div class="footer-phone">
+            <i class="bi bi-telephone-fill"></i>
+            <div class="footer-contact">
+              <span>HUBUNGI KAMI</span>
+              <span>08 244 766 24</span>
             </div>
-            <button class="card-btn">Chat</button>
-            <button class="card-btn">Book a Consultation</button>
-            <p class="card-price">Rp.300.000</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/doctor1.png" class="card-img" alt="" />
-          <div class="card-text">
-            <h3>Dr. Jasmine Burrows</h3>
-            <p>Dokter Spesialis Masalah Tidur</p>
-            <div class="card-icon">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-            <button class="card-btn">Chat</button>
-            <button class="card-btn">Book a Consultation</button>
-            <p class="card-price">Rp.300.000</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/doctor1.png" class="card-img" alt="" />
-          <div class="card-text">
-            <h3>Dr. Jasmine Burrows</h3>
-            <p>Dokter Spesialis Masalah Tidur</p>
-            <div class="card-icon">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-            <button class="card-btn">Chat</button>
-            <button class="card-btn">Book a Consultation</button>
-            <p class="card-price">Rp.300.000</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/doctor1.png" class="card-img" alt="" />
-          <div class="card-text">
-            <h3>Dr. Jasmine Burrows</h3>
-            <p>Dokter Spesialis Masalah Tidur</p>
-            <div class="card-icon">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-            <button class="card-btn">Chat</button>
-            <button class="card-btn">Book a Consultation</button>
-            <p class="card-price">Rp.300.000</p>
           </div>
         </div>
       </div>
-    </main>
+      <div class="two">
+        <h3>Site Map</h3>
+        <span>Beranda</span>
+        <span>Konsultasi</span>
+        <span>Produk</span>
+        <span>Artikel</span>
+      </div>
+      <div class="three">
+        <span>Kontak</span>
+        <span>FaQ</span>
+        <span>Syarat dan Ketentuan</span>
+        <span>Kebijakan Privasi</span>
+      </div>
+      <div class="four">
+        <span> Follow Us On</span>
+        <div>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 
-    <footer>
-      <div class="footer">
-        <div class="one">
-          <h2 class="footer-brand">LOGO BRAND</h2>
-          <div>
-            <div class="footer-phone">
-              <i class="bi bi-telephone-fill"></i>
-              <div class="footer-contact">
-                <span>HUBUNGI KAMI</span>
-                <span>08 244 766 24</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="two">
-          <h3>Site Map</h3>
-          <span>Beranda</span>
-          <span>Konsultasi</span>
-          <span>Produk</span>
-          <span>Artikel</span>
-        </div>
-        <div class="three">
-          <span>Kontak</span>
-          <span>FaQ</span>
-          <span>Syarat dan Ketentuan</span>
-          <span>Kebijakan Privasi</span>
-        </div>
-        <div class="four">
-          <span> Follow Us On</span>
-          <div>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-linkedin"></i>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
