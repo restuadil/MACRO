@@ -1,0 +1,274 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* navigation */
+nav {
+    background-color: #55D0FF;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.nav-brand {
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rye', cursive;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu li a {
+    margin: 0 20px;
+    font-size: 15px;
+    color: black;
+}
+
+.nav-login {
+    background-color: #fff;
+    color: #55D0FF;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* end snavigation */
+.container {
+    margin: 100px;
+}
+
+.container-card {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.card-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-text {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text h3 {
+    font-family: "Fira Sans", sans-serif;
+    font-family: "Playfair Display", serif;
+    font-family: "Rye", cursive;
+    margin-bottom: 10px;
+}
+
+.card-text p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+
+i.bi-star-fill {
+    color: gold;
+}
+
+.doctor-btn {
+    display: block;
+    background-color: #fff;
+    color: #55d0ff;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.card-price {
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+    font-family: "Playfair Display", serif;
+    font-family: "Rye", cursive;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.doctor-profile {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.location {
+    display: flex;
+    flex-direction: row;
+}
+
+.location-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.date {
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    font-size: 20px;
+    gap: 5px;
+    border: 1px solid #55D0FF;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.booking {
+    background-color: #55D0FF;
+    border: none;
+    padding: 10px 100px;
+    border-radius: 10px;
+    display: block;
+    margin: 5px auto;
+}
+
+/* end article section */
+footer {
+    background-color: #55D0FF;
+}
+
+.footer {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 50px;
+}
+
+.footer-brand {
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rye', cursive;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.footer-phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.bi-telephone-fill {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    color: #55D0FF;
+}
+
+.footer-contact {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.two {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.three {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.four span {
+    text-align: right;
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.four div i {
+    color: #55D0FF;
+    background-color: #ffff;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.copyright {
+    display: block;
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
