@@ -28,7 +28,6 @@
 
     .nav-brand {
         font-size: 25px;
-
         color: #fff;
         letter-spacing: 5px;
     }
@@ -117,6 +116,7 @@
     }
 
     .container-card {
+        justify-content: center;
         margin: 50px 0px;
         display: flex;
         flex-direction: row;
