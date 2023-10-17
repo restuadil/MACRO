@@ -1,0 +1,322 @@
+    *,
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    /* navigation */
+    nav {
+        background-color: #55D0FF;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 30px;
+    }
+
+    .nav-brand {
+        font-size: 25px;
+
+        color: #fff;
+        letter-spacing: 5px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-menu li a {
+        margin: 0 20px;
+        font-size: 15px;
+        color: black;
+    }
+
+    .nav-login {
+        background-color: #fff;
+        color: #55D0FF;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 15px;
+        border: none;
+        background-color: #fff;
+        border-radius: 10px;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .nav-brand,
+        .nav-login {
+            display: none;
+        }
+
+        .nav-menu {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .bi-arrow-left-short,
+        .bi-arrow-right-short {
+            display: none;
+        }
+    }
+
+    /* end snavigation */
+
+
+    /* search container */
+    .consultation {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 5px 30px;
+        border: #55d0ff 1px solid;
+        border-radius: 30px;
+    }
+
+    input[type="text"] {
+        border: none;
+        padding: 5px;
+        outline: none;
+    }
+
+    i.fa-search {
+        margin-left: 10px;
+        font-size: 18px;
+        color: #55d0ff;
+    }
+
+    .container-card {
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card {
+        border: 2px solid #55d0ff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        border-radius: 20px;
+    }
+
+    .card-img {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .card-text {
+        margin: 10px;
+    }
+
+    .card-text h3 {
+        font-family: "Fira Sans", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Rye", cursive;
+        margin-bottom: 10px;
+    }
+
+    .card-text p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .card-icon {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin: 10px 0;
+    }
+
+    .card-btn {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        font-size: 15px;
+        background-color: #55d0ff;
+        color: #fff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 10px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+
+    i.bi-star-fill {
+        color: gold;
+    }
+
+    .doctor-btn {
+        display: block;
+        background-color: #fff;
+        color: #55d0ff;
+        border: none;
+        padding: 10px 60px;
+        border-radius: 20px;
+        font-size: 20px;
+        margin: 20px auto;
+        cursor: pointer;
+    }
+
+    .card-price {
+        font-weight: bold;
+        font-family: "Fira Sans", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Rye", cursive;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .card {
+            margin: 0 20px;
+            max-width: 90%;
+            flex-direction: column;
+        }
+    }
+
+    footer {
+        background-color: #55d0ff;
+    }
+
+    .footer {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .one {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 50px;
+    }
+
+    .footer-brand {
+        font-size: 25px;
+        font-family: "Fira Sans", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Rye", cursive;
+        color: #fff;
+        letter-spacing: 5px;
+    }
+
+    .footer-phone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .bi-telephone-fill {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 50%;
+        color: #55d0ff;
+    }
+
+    .footer-contact {
+        color: #ffff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .two {
+        font-family: "Times New Roman", Times, serif;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+
+    .three {
+        font-family: "Times New Roman", Times, serif;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+
+    .four {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .four span {
+        text-align: right;
+        color: #ffff;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .four div i {
+        color: #55d0ff;
+        background-color: #ffff;
+        font-size: 25px;
+        padding: 15px;
+        border-radius: 50%;
+    }
+
+    .copyright {
+        display: block;
+        padding: 15px 0;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer {
+            gap: 10;
+        }
+
+        .one {
+            display: none;
+        }
+
+        .four {
+            display: none;
+        }
+
+    }

@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+
+/* navigation */
 nav {
     background-color: #55D0FF;
     padding: 15px 0;
@@ -25,9 +27,6 @@ nav {
 
 .nav-brand {
     font-size: 25px;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     color: #fff;
     letter-spacing: 5px;
 }
@@ -52,12 +51,39 @@ nav {
     cursor: pointer;
 }
 
+.login {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-brand, .nav-login {
+        display: none;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .bi-arrow-left-short, .bi-arrow-right-short {
+        display: none;
+    }
+}
+
+/* end snavigation */
+
 /* end snavigation */
 
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     gap: 100px;
 }
 
@@ -70,9 +96,6 @@ nav {
 }
 
 .left-title {
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     margin: 20px 0;
     font-size: 30px;
     text-align: center;
@@ -80,7 +103,6 @@ nav {
 
 .left-text {
     font-size: 15px;
-    font-family: 'Fira Sans', sans-serif;
     width: 80%;
     text-align: left;
     margin-top: 10px;
@@ -96,9 +118,6 @@ nav {
 
 .left-price {
     font-size: 20px;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     font-weight: bold;
     text-decoration: line-through;
 }
@@ -106,9 +125,6 @@ nav {
 .left-discount {
     font-size: 30px;
     color: red;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     font-weight: bold;
 }
 
@@ -131,9 +147,6 @@ nav {
 
 
 .right-title {
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     display: block;
     margin: 10px 0;
 }
@@ -146,9 +159,6 @@ nav {
 }
 
 .right-qty {
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     font-size: 30px;
     font-weight: 500;
 }
@@ -206,9 +216,6 @@ nav {
     border: none;
     padding: 15px 100px;
     border-radius: 10px;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     color: #fff;
 }
 
@@ -236,9 +243,6 @@ nav {
     border-radius: 10px;
     width: 100%;
     padding: 10px 0;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     font-size: 20px;
 }
 
@@ -266,6 +270,57 @@ nav {
     font-size: 40px;
 }
 
+@media screen and (max-width: 768px) {
+    main {
+        margin: 25px 5px
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin: 2px 5px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .left-information div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-cart {
+        flex-direction: column;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right-cart {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .right-btn-addToCart {
+        padding: 14px 20px;
+    }
+
+    .right-check {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+}
 
 /* end article section */
 footer {
@@ -289,9 +344,6 @@ footer {
 
 .footer-brand {
     font-size: 25px;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     color: #fff;
     letter-spacing: 5px;
 }
@@ -317,7 +369,6 @@ footer {
 }
 
 .two {
-    font-family: 'Times New Roman', Times, serif;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -326,7 +377,6 @@ footer {
 }
 
 .three {
-    font-family: 'Times New Roman', Times, serif;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -361,4 +411,19 @@ footer {
     font-size: 20px;
     text-align: center;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        gap: 10;
+    }
+
+    .one {
+        display: none;
+    }
+
+    .four {
+        display: none;
+    }
+
 }

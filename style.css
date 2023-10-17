@@ -35,9 +35,6 @@ nav {
 
 .nav-brand {
     font-size: 25px;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     color: #fff;
     letter-spacing: 5px;
 }
@@ -74,8 +71,13 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-menu {
+    .nav-brand, .nav-login {
         display: none;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        justify-content: center;
     }
 
     .bi-arrow-left-short, .bi-arrow-right-short {
@@ -110,9 +112,6 @@ nav {
 
 .hero-text h2 {
     margin-bottom: 10px;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
 }
 
 .hero-text p {
@@ -159,9 +158,6 @@ nav {
 .doctor-title {
     text-align: center;
     margin: 40px 0;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
 }
 
 .card-container {
@@ -191,9 +187,6 @@ nav {
 }
 
 .card-text h3 {
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     margin-bottom: 10px;
 }
 
@@ -257,9 +250,6 @@ nav {
 
 .product-title {
     text-align: center;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     margin: 30px;
 }
 
@@ -277,11 +267,6 @@ nav {
     position: relative;
 }
 
-.banner-title {
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
-}
 
 .banner-tagline {
     font-size: 20px;
@@ -402,9 +387,6 @@ nav {
 
 .article-title {
     text-align: center;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     padding: 30px;
 }
 
@@ -487,9 +469,6 @@ footer {
 
 .footer-brand {
     font-size: 25px;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rye', cursive;
     color: #fff;
     letter-spacing: 5px;
 }
