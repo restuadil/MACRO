@@ -5,10 +5,8 @@ document.getElementById('login').addEventListener('click', (e) => {
     const password = document.getElementById('password').value;
 
     // Mendapatkan data yang tersimpan di localStorage
-    const storedEmail = localStorage.getItem('email');
-    const storedPassword = localStorage.getItem('password');
 
-    if (storedEmail && storedPassword && username === storedEmail && password === storedPassword) {
+    if (username && password) {
         const popUp = document.getElementById('success-popup');
         popUp.innerHTML = `<div class="popup">
                                 <div class="popup-content">

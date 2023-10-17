@@ -62,6 +62,27 @@ nav {
     cursor: pointer;
 }
 
+.login {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .bi-arrow-left-short, .bi-arrow-right-short {
+        display: none;
+    }
+}
+
 /* end snavigation */
 
 /* hero */
@@ -74,7 +95,7 @@ nav {
 }
 
 .left-hero {
-    width: 450px;
+    width: 50%;
 }
 
 .right-hero {
@@ -106,6 +127,25 @@ nav {
     padding: 10px 30px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        margin: 100px 0px 20px 0px;
+    }
+
+    .left-hero {
+        width: 100%;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .banner-tagline {
+        display: none;
+    }
 }
 
 /* end hero */
@@ -196,6 +236,17 @@ nav {
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+
+}
+
 /* end doctor section */
 
 /* productt section */
@@ -217,7 +268,7 @@ nav {
     background-image: url('../img/bed1.avif');
     background-size: cover;
     background-position: center;
-    width: 900px;
+    width: 90%;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -260,6 +311,7 @@ nav {
     transform: translateY(-50%);
     cursor: pointer;
 }
+
 
 .bi-arrow-left-short {
     left: -50px;
@@ -507,4 +559,19 @@ footer {
     font-size: 20px;
     text-align: center;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        gap: 10;
+    }
+
+    .one {
+        display: none;
+    }
+
+    .four {
+        display: none;
+    }
+
 }
