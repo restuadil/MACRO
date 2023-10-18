@@ -20,6 +20,11 @@ a {
   color: black;
 }
 
+.link {
+  text-decoration: none;
+  color: white;
+}
+
 /* navigation */
 nav {
   background-color: #55d0ff;
@@ -548,4 +553,9 @@ footer {
   .four {
     display: none;
   }
+}
+
+.discounted-price {
+  text-decoration: line-through;
+  color: red;
 }
