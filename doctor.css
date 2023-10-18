@@ -151,7 +151,6 @@ i.bi-star-fill {
 
 .card-price {
     font-weight: bold;
-
     text-align: center;
     letter-spacing: 2px;
 }
@@ -214,6 +213,17 @@ i.bi-star-fill {
 
     .card {
         flex-direction: column;
+    }
+
+    .card-text {
+        margin-top: 15px;
+        justify-content: start;
+    }
+    .card-icon {
+        justify-content: start;
+    }
+    .card-price {
+        text-align: start;
     }
 
     .container-doctor {
