@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&family=Montserrat&family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,500&family=Rye&display=swap');
+
 *, html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
     list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
-
-/* navigation */
 
 /* navigation */
 nav {
@@ -28,7 +29,6 @@ nav {
 
 .nav-brand {
     font-size: 25px;
-
     color: #fff;
     letter-spacing: 5px;
 }
@@ -117,9 +117,6 @@ nav {
 }
 
 .card-text h3 {
-    font-family: "Fira Sans", sans-serif;
-    font-family: "Playfair Display", serif;
-    font-family: "Rye", cursive;
     margin-bottom: 10px;
 }
 
@@ -154,11 +151,15 @@ i.bi-star-fill {
 
 .card-price {
     font-weight: bold;
-    font-family: "Fira Sans", sans-serif;
-    font-family: "Playfair Display", serif;
-    font-family: "Rye", cursive;
+
     text-align: center;
     letter-spacing: 2px;
+}
+
+.container-doctor {
+    display: flex;
+    margin: 10px 200px;
+    justify-content: space-around;
 }
 
 .doctor-profile {
@@ -204,6 +205,24 @@ i.bi-star-fill {
     border-radius: 10px;
     display: block;
     margin: 5px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 60px 10px 20px 10px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .container-doctor {
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
 }
 
 /* end article section */
@@ -300,7 +319,7 @@ footer {
     color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .footer {
         gap: 10;
     }
