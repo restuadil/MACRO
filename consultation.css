@@ -67,6 +67,7 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+
   .nav-brand,
   .nav-login {
     display: none;
@@ -87,12 +88,12 @@ nav {
 
 /* search container */
 .consultation {
-  margin-top: 70px;
+  margin-top: 100px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .search-container {
@@ -102,12 +103,14 @@ nav {
   padding: 5px 30px;
   border: #55d0ff 1px solid;
   border-radius: 30px;
+  width: 30%;
 }
 
 input[type="text"] {
   border: none;
-  padding: 5px;
+  padding: 10px;
   outline: none;
+  width: 100%;
 }
 
 i.fa-search {
@@ -133,6 +136,7 @@ i.fa-search {
   align-items: center;
   padding: 20px 10px;
   border-radius: 20px;
+  width: 600px;
 }
 
 .card-img {
@@ -203,6 +207,13 @@ i.bi-star-fill {
     margin: 0 20px;
     max-width: 90%;
     flex-direction: column;
+  }
+
+  .consultation {
+    flex-direction: column;
+  }
+  .search-container {
+    width: 70%;
   }
 
   .consultation h3 {

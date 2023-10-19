@@ -19,6 +19,6 @@ document.getElementById('login').addEventListener('click', (e) => {
             location.href = 'index.html';
         }, 1000);
     } else {
-        alert('Login Gagal');
+        alert('Silakan masukkan username dan password yang benar');
     }
 });
